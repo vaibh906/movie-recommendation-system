@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: url("bg.jpg") no-repeat center center/cover;
+    height: 100vh;
+}
+
+.overlay {
+    background: rgba(0,0,0,0.75);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background: rgba(255,255,255,0.1);
+    padding: 30px;
+    border-radius: 15px;
+    width: 500px;
+    text-align: center;
+    color: white;
+    backdrop-filter: blur(10px);
+}
+
+select, button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+button {
+    background: linear-gradient(45deg, red, orange);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.movie-box {
+    background: rgba(255,255,255,0.2);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.movie-box img {
+    width: 100%;
+    border-radius: 8px;
+}
